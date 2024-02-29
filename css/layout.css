@@ -1,0 +1,54 @@
+*{
+    /*css universal ,memumngkinkan semua tag yang ada 
+    di dalam html terpengaruh dengan css universal*/
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.header{
+    background-image: url('../img/Kellogs.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.navbar{
+    overflow: hidden;
+    background-color:orange;
+    justify-content: center;
+    display: flex;
+}
+.navbar a{
+    float: left;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    
+}
+.navbar a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+.column.side{
+    width: 25%;
+}
+.column.middle{
+    width: 40%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both; /*membersihkan float left sebelumnya*/
+}
+.footer{
+    background-color:orange;
+    padding: 10px;
+    text-align: center;
+}
